@@ -1,0 +1,41 @@
+{% extends "template.html" %}{% block content %}
+
+<div class="container">
+
+    <h1>Select an Image to Predict:</h1>
+    <div class="panel">
+        <input id="file-upload" class="hidden" type="file" accept="image/x-png,image/gif,image/jpeg"/>
+        <label for="file-upload" id="file-drag" class="upload-box">
+            <div id="upload-caption">Drop/Drop or click to select</div>
+            <img id="image-preview" class="hidden"/>
+        </label>
+    </div>
+    <div style="margin-bottom: 2rem;">
+        <input type="button" value="Clear" class="button" onclick="clearImage();"/>
+        <input type="button" value="Predict" class="button" onclick="predictImage();"/>
+    </div>
+
+    <div id="image-box">
+        <img id="image-display"/>
+    </div>
+
+    <div>
+	<table id="result-table" class="hidden" style = "padding-top: 50px">
+	<tr>
+		<th>Your X-ray Classification:</th>
+		<th>Probability of COVID-19(%):</th>
+		<th>Probability of Pneumonia(%):</th>
+		<th>Probability of Healthy(%):</th>
+	</tr>
+	<tr>
+		<th id="classification"></th>
+		<th id="covid-probability"></th>
+		<th id="pneumonia-probability"></th>
+		<th id="healthy-probability"></th>
+	</tr>
+	</table>
+    </div>
+</div>
+{% endblock %}
+
+
