@@ -49,3 +49,6 @@ The CNN model was built in Python using open source Keras library and Tensorflow
 * **model**: contains code to load, train, and declare the CNN classifier model. This repo also contains *trained_model* which is a CNN model that has already been trained with the Kraggle dataset above.
 * **templates**: html front end pages. **home.html** is the first page user is redirected to.
 * **static**: contains css and javascript for the frontend. **main.js** takes images the user uploads into the html, Post's them to the backend, then listens for prediction results.
+
+## Demo
+https://www.youtube.com/embed/IMn8mu70Rts
