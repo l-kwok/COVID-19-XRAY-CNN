@@ -7,25 +7,16 @@ Developed By: Chester Cervantes <ccervant@sfu.ca>, Nathan Cheung <nca45@sfu.ca>,
 ## What you'll need before downloading
  - Python3 (3.5-3.7)
  - pip (newest version)
- - A ssh key to your sfu gitlab ["But I never used gitlab before"](https://coursys.sfu.ca/2019su-cmpt-470-d1/pages/GitLab)
 
 ## Local Installation
 NOTE: A model must be trained before starting the webapp
 This is how to locally install and run the web app via command line:
 
 ```shell
-# 1. configure your git for gitlab permissions
-$ git config --global user.name "*sfu username*"
-$ git config --global user.email "*sfu username*@sfu.ca"
-
-# 2. Clone
-$ git clone git@csil-git1.cs.surrey.sfu.ca:cmpt-340-fighting-dreamers/ml-vs-covid-webapp.git
-$ cd ml-vs-covid-webapp
-
-# 3. Install Python packages
+# 1. Install Python packages
 $ pip install -r requirements.txt
 
-# 4. Run web app
+# 2. Run web app
 $ python main.py
 
 ```
@@ -36,7 +27,7 @@ Check it out: [http://localhost:5000](http://localhost:5000)
 ## Model Training
 
 Instructions to train a new model
-
+WARNING: Dataset and Model will be large: Allocate ~1.5GB of space
 ```shell
 # 1. Download Kaggle Dataset from https://www.kaggle.com/praveengovi/coronahack-chest-xraydataset#IM-0001-0001.jpeg 
     
