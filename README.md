@@ -1,8 +1,7 @@
-# A.I vs COVID19
-### Using Artificial Intelligence to detect COVID-19 in chest x-rays while comparing accuracy using different loss functions and optimizers
+# Detecting COVID-19 Infected Chest X-RAYS
+### Using Artificial Intelligence (Convolutional Neural Network) to detect COVID-19 in chest x-rays 
 
-Course: CMPT340 - G. Hamarneh
-People: Chester Cervantes <ccervant@sfu.ca>, Nathan Cheung <nca45@sfu.ca>, Linden Kwok
+Developed By: Chester Cervantes <ccervant@sfu.ca>, Nathan Cheung <nca45@sfu.ca>, Linden Kwok
 <lindenk@sfu.ca>, Melissa Lee <msl25@sfu.ca>, Evan Yao <evany@sfu.ca>
 
 ## What you'll need before downloading
@@ -11,7 +10,7 @@ People: Chester Cervantes <ccervant@sfu.ca>, Nathan Cheung <nca45@sfu.ca>, Linde
  - A ssh key to your sfu gitlab ["But I never used gitlab before"](https://coursys.sfu.ca/2019su-cmpt-470-d1/pages/GitLab)
 
 ## Local Installation
-
+NOTE: A model must be trained before starting the webapp
 This is how to locally install and run the web app via command line:
 
 ```shell
@@ -39,9 +38,9 @@ Check it out: [http://localhost:5000](http://localhost:5000)
 Instructions to train a new model
 
 ```shell
-# 1. (optional) Download Kaggle Dataset from https://www.kaggle.com/praveengovi/coronahack-chest-xraydataset#IM-0001-0001.jpeg 
+# 1. Download Kaggle Dataset from https://www.kaggle.com/praveengovi/coronahack-chest-xraydataset#IM-0001-0001.jpeg 
     
-# 2. (optional) Unzip the dataset into ./dataset
+# 2. Unzip the dataset into ./dataset
     
 # 3. Load The Datasets 
 $ python load.py
